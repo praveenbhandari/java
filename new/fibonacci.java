@@ -17,25 +17,32 @@
 
 class fibonacci{
 
-int series(int n){
+// int series(int n){
+void series(int n){
 	int c=0,num1=0,num2=1;
 	int sum=0;
 	while(c<n){
+		System.out.println(num1+" ");
+		// System.out.println(num1+" + " num2+" = "+num3);
 		int num3 = num1+num2;
+
+		// System.out.print(num1+" + "+num2+" = "+num3+"\n");
 		num1=num2;
 		num2=num3;
-		sum=num3;
+
+		// System.out.print("num1 : "+num1+"num2 : "+num2+"\n");
+		// sum=num1;
 		c++;
 	}
 
-return sum;
+// return sum;
 }
 
 
 	public static void main(String[] args) {
 		fibonacci f= new fibonacci();
-
-		System.out.println(f.series(9));
+f.series(10);
+		// System.out.println(f.series(10));
 	}
 
 }
