@@ -1,11 +1,39 @@
 class insertionsort{
+	static void disp(int a[]){
+		for(int i:a){
+			System.out.print(i+" ");
+		}
+	}
+static void insertions(int[] a){
+	// int piv=a[a.length-1];
+ 		for(int i=1;i<a.length;i++){
+ 			int curr = a[i];
+			int j=i-1;
+			while(j >= 0 && a[j] > curr ){
+				// System.out.println(a[j]+" "+a[j+1]);
+			// System.out.println(" .........");
+					System.out.print(j);
+				a[j+1]=a[j];
+					
+				// disp(a);
+				j--;
+				System.out.println(" "+j);
+			}
+			a[j+1]=curr;
+ 			// if(piv < curr){
+			// 	a[]
 
+
+			// }
+ 		}
+
+		
+}
 	public static void main(String[] args) {
  		int a[]={3,2,62,6,11,0,99,55,1,5,6,2,7,8};
- 		for(int i=0;i<a.length;i++){
- 			int curr= a[i];
- 			// if(){}
- 		}
+		insertions(a);
+		System.out.print("final ");
+		disp(a);
 	}
 }
 
