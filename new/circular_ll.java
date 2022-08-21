@@ -13,10 +13,10 @@ class circular_ll{
 
 		if(head == null){
 			head = n;
-			// tail = n;
+			tail = n;
 			tail.next = head;
 		}	else{
-			// tail.next=n;
+			tail.next=n;
 			tail=n;
 			tail.next=head;
 
